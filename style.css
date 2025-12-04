@@ -96,7 +96,7 @@ body {
   opacity: 0.9;
 }
 
-/* SEÇÕES */
+/* SEÇÕES GERAIS */
 
 .secao {
   padding: 2.5rem 1.5rem;
@@ -181,22 +181,33 @@ th {
   font-size: 0.9rem;
 }
 
-/* GALERIA */
+/* GALERIA DE FOTOS */
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.foto-placeholder {
-  height: 140px;
+.item-galeria {
+  background-color: #fff;
   border-radius: 12px;
-  background: #dbe7ea;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.item-galeria img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.item-galeria figcaption {
+  padding: 0.6rem 0.8rem;
   font-size: 0.9rem;
   color: #11424a;
 }
